@@ -1,0 +1,30 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    color: #2D2D2D
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+h1 {
+    font-weight: 500;
+    font-size: 3.3rem;
+}
+#intro {
+    padding-top: 20vw;
+}
+#intro p {
+    width: 580px;
+    overflow: visible;
+}
+p a{
+    text-decoration: none;
+    color: #2D2D2D
+}
+p {
+    font-weight: 300;
+    font-size: 1.6rem;
+    display: block;
+}
