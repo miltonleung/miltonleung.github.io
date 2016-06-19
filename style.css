@@ -57,7 +57,7 @@ b {
 #description h3 {
     font-size: 1.4em;
     font-weight: 400;
-    color: #636363;
+    color: #737373;
     display: inline;
     padding-bottom: 0.3em;
 }
@@ -65,18 +65,25 @@ b {
     display: inline;
     vertical-align: bottom;
     margin-right: 0.9em;
+    height: 3.1em;
+    width: auto;
 }
 #lastthumbnail {
     display: inline;
     vertical-align: bottom;
-    margin-right: -0.6em;
+    margin-right: -0.35em;
+    height: 3.1em;
+    width: auto;
 }
 .enjoy {
     width: 50%;
     float: left;
-    margin-top: 1em;
+    margin-top: 0.6em;
     margin-bottom: 1em;
 }
 #secondDescription {
-    margin-top: 5em;
+    padding-top: 8em;
+}
+#secondDescription h2 {
+    margin-bottom: 0.6em;
 }
