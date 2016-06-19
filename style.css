@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 body {
     padding-left: 15vw;
+    width: 960px;
 }
 h1 {
     font-weight: 500;
@@ -30,14 +31,14 @@ h1 {
     word-wrap: break-word;
     overflow: visible;
     color: #808080;
+    font-weight: 300;
+    font-size: 1.6em;
 }
-p a{
+#intro a{
     text-decoration: none;
     color: #7C7C7C;
 }
 p {
-    font-weight: 300;
-    font-size: 1.6em;
     display: block;
 }
 b {
@@ -48,11 +49,12 @@ b {
     margin-top: 3.5em;
     width: 580px;
 }
-#description h2 {
+h2 {
     margin-top: 3.5em;
     font-size: 1.7em;
     font-weight: 500;
     color: #808080;
+    margin-bottom: 0.6em;
 }
 #description h3 {
     font-size: 1.4em;
@@ -60,6 +62,9 @@ b {
     color: #737373;
     display: inline;
     padding-bottom: 0.3em;
+}
+#firstDescription h2 {
+    margin-bottom: 0.1em;
 }
 .thumbnail {
     display: inline;
@@ -84,6 +89,36 @@ b {
 #secondDescription {
     padding-top: 8em;
 }
-#secondDescription h2 {
-    margin-bottom: 0.6em;
+#projects h4 {
+    font-size: 2em;
+    font-weight: 500;
+    color: #464646;
+    margin-bottom: 0.2em;
+}
+#projects h5 {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #808080;
+}
+#projects p {
+    font-size: 1.4em;
+    color: #747474;
+    float: left;
+    display: block;
+}
+#title {
+    float: left;
+    margin-bottom: 3.3em;
+    width: 56%;
+}
+.button {
+    border: 3px solid #B9B9B9;
+    border-radius: 48px;
+    /* VIEW ON GITHUB: */
+    font-size: 1.43em;
+    color: #747474;
+    text-decoration: none;
+    padding: 1.18em 2.16em;
+    float: left;
+    margin-left: 1em;
 }
