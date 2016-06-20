@@ -1,30 +1,248 @@
+/*
+light 300
+normal 400
+medium 500
+semibold 600
+*/
 html {
     margin: 0px;
     padding: 0px;
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
-    color: #2D2D2D
+    color: #808080
 }
 h1, h2, h3, h4, h5, h6, p {
     margin: 0px;
 }
+body {
+    padding-left: 15vw;
+    width: 960px;
+}
 h1 {
     font-weight: 500;
-    font-size: 3.3rem;
+    font-size: 3.3em;
+    color: #333333;
+}
+a {
+    text-decoration: none;
 }
 #intro {
     padding-top: 20vw;
 }
 #intro p {
     width: 580px;
+    word-wrap: break-word;
     overflow: visible;
+    color: #808080;
+    font-weight: 300;
+    font-size: 1.6em;
 }
-p a{
+#intro a{
     text-decoration: none;
-    color: #2D2D2D
+    color: #7C7C7C;
 }
 p {
-    font-weight: 300;
-    font-size: 1.6rem;
     display: block;
 }
+b {
+    font-weight: 600;
+    color: #7C7C7C;
+}
+#description {
+    margin-top: 3.5em;
+    width: 580px;
+}
+#description a {
+    color: #737373;
+}
+h2 {
+    margin-top: 3.5em;
+    font-size: 1.7em;
+    font-weight: 500;
+    color: #808080;
+    margin-bottom: 0.6em;
+}
+#description h3 {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #737373;
+    display: inline;
+    padding-bottom: 0.3em;
+}
+#firstDescription h2 {
+    margin-bottom: 0.1em;
+}
+#firstDescription a:hover {
+    text-decoration: underline;
+}
+.thumbnail {
+    display: inline;
+    vertical-align: bottom;
+    margin-right: 0.9em;
+    height: 3.1em;
+    width: auto;
+}
+#lastthumbnail {
+    display: inline;
+    vertical-align: bottom;
+    margin-right: -0.35em;
+    height: 3.1em;
+    width: auto;
+}
+.enjoy {
+    width: 50%;
+    float: left;
+    margin-top: 0.6em;
+    margin-bottom: 1em;
+}
+#secondDescription {
+    padding-top: 8em;
+}
+#projects h4 {
+    font-size: 2em;
+    font-weight: 500;
+    color: #464646;
+    margin-bottom: 0.2em;
+}
+#projects h5 {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #808080;
+}
+#projects p {
+    font-size: 1.4em;
+    color: #747474;
+    width: 95%;
+    clear: both;
+    display: block;
+}
+.title {
+    float: left;
+    margin-bottom: 3.3em;
+    width: 56%;
+}
+.button {
+    border: 3px solid #B9B9B9;
+    border-radius: 48px;
+    /* VIEW ON GITHUB: */
+    font-size: 1.43em;
+    color: #747474;
+    text-decoration: none;
+    padding: 1.18em 2.16em;
+    float: left;
+    margin-left: 1em;
+    width: 8.2em;
+    text-align: center;
+}
+.button:hover {
+    background-color: #F8F8F8;
+}
+#smallstepsdemo {
+    width: 80%;
+    margin: 2.2em auto 12em 3vw;
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+#bprimedemo {
+    width: 80%;
+    margin: 2.2em auto 12em 3vw;
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    background
+}
+.splash {
+    width: 100%;
+    position: relative;
+    top: 0; 
+    left: 0;
+}
+#bprimedemo.splash {
+    padding: 0 4px;
+}
+#scrollpage {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+#demovideo {
+    position: absolute;
+    top: 11.42%;
+    left: 33.2%;
+}
+#demoweb {
+    width: 100%;
+
+}
+#scrollpage {
+    position: absolute;
+    top: 6.2%;
+    left: 1%;
+    width: 98%;
+    height: 92%;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #C5C5C5;
+}
+footer {
+    text-align: center;
+    margin: 3em auto;
+}
+footer .thumbnail {
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+/* Buzz effect css button */
+@-webkit-keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+@keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+.hvr-buzz {
+
+    display: inline-block;
+
+
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+    -webkit-animation-name: hvr-buzz;
+    animation-name: hvr-buzz;
+    -webkit-animation-duration: 0.1s;
+    animation-duration: 0.1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
