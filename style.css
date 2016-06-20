@@ -103,7 +103,8 @@ h2 {
 #projects p {
     font-size: 1.4em;
     color: #747474;
-    float: left;
+    width: 95%;
+    clear: both;
     display: block;
 }
 #title {
@@ -121,4 +122,23 @@ h2 {
     padding: 1.18em 2.16em;
     float: left;
     margin-left: 1em;
+}
+#smallstepsdemo {
+    width: 80%;
+    margin: 2.2em auto 2.2em 3vw;
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.splash {
+    width: 100%;
+    position: relative;
+    top: 0; 
+    left: 0;
+}
+#demovideo {
+    position: absolute;
+    top: 11.41%;
+    left: 33.2%;
 }
