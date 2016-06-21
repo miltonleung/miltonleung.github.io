@@ -239,8 +239,9 @@ hr {
     and (max-device-width : 480px) {
         /* Styles */
         body {
-            -webkit-text-size-adjust: 100%;
-            font-size: 120%;
+            -webkit-text-size-adjust: 150%;
+            font-size: 150%;
+            line-height: 1.5;
         }
         .title {
             clear: both;
@@ -279,9 +280,6 @@ hr {
         #footer {
             margin: 2em auto;
             width: 100%;
-        }
-        html {
-            -webkit-text-size-adjust: 150%;
         }
 }
 
