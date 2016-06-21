@@ -249,6 +249,7 @@ hr {
         }
         .button {
             margin-left: 10vw;
+            padding: 1.18em 1.4em;
         }
         video {
             display: none;
