@@ -130,7 +130,7 @@ h2 {
     font-size: 1.43em;
     color: #747474;
     text-decoration: none;
-    padding: 1.18em 2.16em;
+    padding: 1.18em 1.6em;
     float: left;
     margin-left: 1em;
     width: 8.2em;
@@ -234,20 +234,20 @@ hr {
         font-size: 1.2em;
     }
 }
-@media only screen and (max-width: 530px) {
-    #projects p {
+@media only screen and (max-width: 736px) {
+    body {
+        -webkit-text-size-adjust: 100%;
+        font-size: 120%;
+    }
+    .title {
         clear: both;
         width: 100%;
     }
+    .button {
+        margin-left: 10vw;
+    }
     
 }
-/*
-@media only screen and (max-width: 960px) {
-    body {
-        width: 100vw;
-}
-}
-*/
 
 /* Buzz effect css button */
 @-webkit-keyframes hvr-buzz {
