@@ -249,7 +249,8 @@ hr {
         }
         .button {
             margin-left: 5vw;
-            padding: 1.18em 0.4em;
+            padding: 1.18em 0.6em;
+            border-radius: 2em;
         }
         video {
             display: none;
