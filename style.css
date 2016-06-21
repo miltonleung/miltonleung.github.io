@@ -241,7 +241,7 @@ hr {
         body {
             -webkit-text-size-adjust: 200%;
             font-size: 200%;
-            line-height: 2;
+            line-height: 1.5;
         }
         .title {
             clear: both;
