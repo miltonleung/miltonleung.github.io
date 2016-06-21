@@ -239,9 +239,9 @@ hr {
     and (max-device-width : 480px) {
         /* Styles */
         body {
-            -webkit-text-size-adjust: 150%;
-            font-size: 150%;
-            line-height: 1.5;
+            -webkit-text-size-adjust: 200%;
+            font-size: 200%;
+            line-height: 2;
         }
         .title {
             clear: both;
