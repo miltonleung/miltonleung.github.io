@@ -31,7 +31,7 @@ a {
     padding-top: 20vw;
 }
 #intro p {
-    width: 580px;
+    width: 60%;
     word-wrap: break-word;
     overflow: visible;
     color: #808080;
@@ -51,7 +51,7 @@ b {
 }
 #description {
     margin-top: 3.5em;
-    width: 580px;
+    width: 40%;
 }
 #description a {
     color: #737373;
@@ -248,6 +248,37 @@ hr {
         }
         .button {
             margin-left: 10vw;
+        }
+        video {
+            display: none;
+        }
+        #intro p {
+            width: 95%;   
+        }
+        .enjoy {
+            width: 100%;
+        }
+        #secondDescription {
+            padding-top: 15em;
+        }
+        #secondDescription h3{
+            width: 100%;
+            float: left;
+            
+        }
+        #description {
+            width: 100%;
+        }
+        #projects {
+            margin-top: 12em;
+        }
+        hr {
+            width: 96%;
+            margin: 0 auto;
+        }
+        #footer {
+            margin: 2em auto;
+            width: 100%;
         }
 }
 
