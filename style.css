@@ -239,8 +239,8 @@ hr {
     and (max-device-width : 480px) {
         /* Styles */
         body {
-            -webkit-text-size-adjust: 200%;
-            font-size: 200%;
+            -webkit-text-size-adjust: 170%;
+            font-size: 170%;
             line-height: 1.5;
         }
         .title {
