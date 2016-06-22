@@ -18,6 +18,7 @@ body {
     padding-left: 18vw;
     padding-right: 18vw;
     margin: 0;
+    max-width: 117rem;
 }
 h1 {
     font-weight: 500;
@@ -142,6 +143,7 @@ h2 {
 }
 #smallstepsdemo {
     width: 80%;
+    max-width: 99.6rem;
     margin: 2.2em auto 12em 3vw;
     display: block;
     position: relative;
@@ -159,6 +161,8 @@ h2 {
 }
 .splash {
     width: 100%;
+    max-width: 96rem;
+    margin: 0 auto;
     position: relative;
     top: 0; 
     left: 0;
@@ -169,23 +173,23 @@ h2 {
 #scrollpage {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    height: 100%;
+    position: absolute;
+    top: 6.2%;
+    left: 0.6%;
+    width: 98.5%;
+    max-width: 94.3rem;
+    height: 92%;
 }
 #demovideo {
     position: absolute;
-    top: 11.42%;
-    left: 33.2%;
+    top: 11.57%;
+    left: 33.3%;
+    width: 33.8%;
+    max-width: 32.4rem;
+    height: auto;
 }
 #demoweb {
     width: 100%;
-
-}
-#scrollpage {
-    position: absolute;
-    top: 6.2%;
-    left: 1%;
-    width: 98%;
-    height: 92%;
 }
 hr {
     border: 0;
@@ -204,7 +208,6 @@ hr {
     margin-left: 2em;
     margin-bottom: 2em;
 }
-
 
 @media only screen and (max-width: 1560px) {
     body {
@@ -292,6 +295,7 @@ hr {
             width: 100%;
         }
 }
+
 
 /* Buzz effect css button */
 @-webkit-keyframes hvr-buzz {
