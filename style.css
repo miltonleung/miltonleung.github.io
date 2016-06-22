@@ -282,7 +282,8 @@ hr {
         #contact {
             left: 0;
             width: 100%;
-            padding-left: 40%;
+            padding-left: 60%;
+            margin-top: 1em;
             position: relative;
             margin-bottom: 3em;
         }
