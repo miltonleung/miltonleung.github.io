@@ -273,8 +273,8 @@ hr {
     and (max-device-width : 480px) {
         /* Styles */
         body {
-            -webkit-text-size-adjust: 100%;
-            font-size: 160%;
+            -webkit-text-size-adjust: 170%;
+            font-size: 170%;
             line-height: 1.2;
             padding-left: 5vw;
             padding-right: 5vw;
