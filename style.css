@@ -276,8 +276,8 @@ hr {
             -webkit-text-size-adjust: 170%;
             font-size: 170%;
             line-height: 1.2;
-            padding-left: 2.5vw;
-            padding-right: 2.5vw;
+            padding-left: 5vw;
+            padding-right: 5vw;
         }
         #contact {
             left: 0;
@@ -285,6 +285,9 @@ hr {
             padding-left: 40%;
             position: relative;
             margin-bottom: 3em;
+        }
+        #contact li {
+            display: inline;
         }
         .title {
             clear: both;
