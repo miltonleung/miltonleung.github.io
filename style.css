@@ -276,6 +276,8 @@ hr {
             -webkit-text-size-adjust: 170%;
             font-size: 170%;
             line-height: 1.2;
+            padding-left: 2.5vw;
+            padding-right: 2.5vw;
         }
         #contact {
             left: 0;
