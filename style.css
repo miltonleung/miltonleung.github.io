@@ -28,6 +28,17 @@ h1 {
 a {
     text-decoration: none;
 }
+#contact {
+    position: fixed;
+    right: 0;
+    top: 40%;
+    width: 8em;
+    margin-top: -2.5em;
+    list-style-type: none;
+}
+#contact li {
+    margin-bottom: 2em;
+}
 #intro {
     padding-top: 20vw;
 }
@@ -244,6 +255,18 @@ hr {
     #description {
         width: 100%;
     }
+    #contact {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 27%;
+        padding-left: 0;
+        margin-top: 1em;
+        list-style-type: none;
+    }
+    #contact li {
+        display: inline;
+    }
 }
 @media only screen 
     and (min-device-width : 320px) 
@@ -253,6 +276,13 @@ hr {
             -webkit-text-size-adjust: 170%;
             font-size: 170%;
             line-height: 1.2;
+        }
+        #contact {
+            left: 0;
+            width: 100%;
+            padding-left: 40%;
+            position: relative;
+            margin-bottom: 3em;
         }
         .title {
             clear: both;
@@ -278,7 +308,7 @@ hr {
         #secondDescription h3{
             width: 100%;
             float: left;
-            
+
         }
         #description {
             width: 100%;
