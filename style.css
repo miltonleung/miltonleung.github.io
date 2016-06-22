@@ -51,7 +51,7 @@ b {
 }
 #description {
     margin-top: 3.5em;
-    width: 40%;
+    width: 60%;
 }
 #description a {
     color: #737373;
@@ -232,6 +232,14 @@ hr {
     }
     .button {
         font-size: 1.2em;
+    }
+    #description {
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #description {
+        width: 100%;
     }
 }
 @media only screen 
