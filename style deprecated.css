@@ -1,3 +1,9 @@
+/*
+light 300
+normal 400
+medium 500
+semibold 600
+*/
 html {
     margin: 0px;
     padding: 0px;
@@ -9,8 +15,8 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0px;
 }
 body {
-    padding-left: 6vw;
-    padding-right: 5vw;
+    padding-left: 18vw;
+    padding-right: 18vw;
     margin: 0;
     max-width: 117rem;
 }
@@ -23,25 +29,21 @@ a {
     text-decoration: none;
 }
 #contact {
-    position: absolute;
-    top: 0.5em;
-    right: 0.5em;
-    margin-top: 1em;
-    margin-bottom: 3em;
+    position: fixed;
+    right: 0;
+    top: 40%;
+    width: 8em;
+    margin-top: -2.5em;
+    list-style-type: none;
 }
 #contact li {
-    display: inline;
-    margin: 0.2em;
-}
-#contact li img {
-    width: 3em;
-    height: auto;
+    margin-bottom: 2em;
 }
 #intro {
     padding-top: 20vw;
 }
 #intro p {
-    width: 90%;
+    width: 60%;
     word-wrap: break-word;
     overflow: visible;
     color: #808080;
@@ -61,6 +63,7 @@ b {
 }
 #description {
     margin-top: 3.5em;
+    width: 60%;
 }
 #description a {
     color: #737373;
@@ -91,7 +94,6 @@ h2 {
     margin-right: 0.9em;
     height: 3.1em;
     width: auto;
-    float: left;
 }
 #lastthumbnail {
     display: inline;
@@ -99,7 +101,6 @@ h2 {
     margin-right: -0.35em;
     height: 3.1em;
     width: auto;
-    float: left;
 }
 .enjoy {
     width: 50%;
@@ -120,7 +121,7 @@ h2 {
     font-size: 1.3em;
     font-weight: 400;
     color: #808080;
-    /*    width: 90%;*/
+    width: 90%;
 }
 #projects p {
     font-size: 1.4em;
@@ -131,12 +132,13 @@ h2 {
 }
 .title {
     float: left;
-    margin-bottom: 2.5em;
+    margin-bottom: 3.3em;
+    width: 60%;
 }
 .title img {
     float: left;
     margin-top: 0.6em;
-    margin-right: 2em;
+    margin-right: 2.5em;
     border-radius: 17px;
     padding-bottom: 0.5em;
     height: 84px;
@@ -145,19 +147,16 @@ h2 {
 .button {
     border: 3px solid #B9B9B9;
     border-radius: 48px;
-    font-size: 1.2em;
+    /* VIEW ON GITHUB: */
+    font-size: 1.43em;
     color: #747474;
     text-decoration: none;
-    padding: 1.18em 0.8em;
+    padding: 1.18em 1.6em;
     float: left;
-    width: 35vw;
-    max-width: 13.2em;
+    margin-left: 1em;
+    width: 8.2em;
     text-align: center;
     margin-bottom: .7em;
-}
-#button-right {
-    margin-left: 0.5em;
-    margin-bottom: 2em;
 }
 .button:hover {
     background-color: #F8F8F8;
@@ -216,62 +215,132 @@ hr {
     border: 0;
     height: 1px;
     background: #C5C5C5;
-    margin: 0 auto;
+    margin-left: 17.5%;
 }
 #footer {
     text-align: center;
-    margin-top: 3em;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-#links {
-    margin: 3em auto 0 auto;
+    margin: 3em auto;
+    width: 50%;
+    padding-right:  15%;
 }
 #footer .thumbnail {
-    margin-right: 1em;
-    margin-left: 1em;
+    margin-right: 2em;
+    margin-left: 2em;
     margin-bottom: 2em;
 }
-#footer img {
-    width: 3em;
-    height: auto;
-}
-@media only screen and (min-width: 700px) {
-    .title {
-        width: 60%;
-    }
-    .button {
-        margin-left: 0.5em;
-        margin-bottom: 0.7em;
-    }
-}
-@media only screen and (min-width: 1024px) {
+
+@media only screen and (max-width: 1560px) {
     body {
-        padding-left: 14vw;
+        padding-left: 15vw;
         padding-right: 12vw;
     }
-    #intro p {
-        width: 65%;
+    .button {
+        font-size: 1.5em;
+        margin-left: .8em;
+    }
+}
+@media only screen and (max-width: 1470px) {
+    body {
+        padding-left: 15vw;
+        padding-right: 8vw;
+    }
+    .button {
+        font-size: 1.2em;
+    }
+}
+@media only screen and (max-width: 1150px) {
+    body {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+    .button {
+        font-size: 1.2em;
+    }
+    #description {
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #description {
+        width: 100%;
     }
     #contact {
         position: fixed;
         right: 0;
-        top: 40%;
-        width: 8em;
-        margin-top: -2.5em;
+        top: 0;
+        width: 27%;
+        padding-left: 0;
+        margin-top: 1em;
         list-style-type: none;
     }
     #contact li {
-        margin-bottom: 2em;
-    }
-    #contact li img {
-        width: 3.5em;
-        height: auto;
-        padding: 0.7em;
+        display: inline;
     }
 }
+@media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px) {
+        /* Styles */
+        body {
+            -webkit-text-size-adjust: 170%;
+            font-size: 170%;
+            line-height: 1.2;
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+        #contact {
+            left: 0;
+            width: 100%;
+            padding-left: 70%;
+            margin-top: 1em;
+            position: relative;
+            margin-bottom: 3em;
+        }
+        #contact li {
+            display: inline;
+        }
+        .title {
+            clear: both;
+            width: 100%;
+        }
+        .button {
+            margin-left: 5vw;
+            padding: 1.18em 0.6em;
+            border-radius: 2em;
+        }
+        video {
+            display: none;
+        }
+        #intro p {
+            width: 95%;   
+        }
+        .enjoy {
+            width: 100%;
+        }
+        #secondDescription {
+            padding-top: 15em;
+        }
+        #secondDescription h3{
+            width: 100%;
+            float: left;
+
+        }
+        #description {
+            width: 100%;
+        }
+        #projects {
+            margin-top: 16em;
+        }
+        hr {
+            width: 96%;
+            margin: 0 auto;
+        }
+        #footer {
+            margin: 2em auto;
+            width: 100%;
+        }
+}
+
 
 /* Buzz effect css button */
 @-webkit-keyframes hvr-buzz {
@@ -319,3 +388,4 @@ hr {
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
+
