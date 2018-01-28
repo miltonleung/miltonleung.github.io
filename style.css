@@ -191,10 +191,10 @@ footer p {
     #contact-links .col-12:last-child {
         padding-right: 0;
     }
-    #projects > .row > .col-s-6:last-child {
+    #projects > .row > a:last-child > .col-s-6 {
         padding-left: 0.5rem;
     }
-    #projects > .row > .col-s-6:first-child {
+    #projects > .row > a:first-child > .col-s-6 {
         padding-right: 0.5rem;
     }
 }
@@ -276,10 +276,10 @@ footer p {
     #projects .row > div {
         margin-top: 2.5rem;
     }
-    #projects > .row > .col-s-6:last-child {
+    #projects > .row > a:last-child > .col-s-6 {
         padding-left: 1.25rem;
     }
-    #projects > .row > .col-s-6:first-child {
+    #projects > .row > a:first-child > .col-s-6 {
         padding-right: 1.25rem;
     }
     #award {
