@@ -15,9 +15,6 @@ body {
     line-height: normal !important;
     box-sizing: padding-box;
 }
-* {
-    box-sizing: border-box;
-}
 /*Title*/
 h1 {
     font-weight: 700;
@@ -32,7 +29,7 @@ h2 {
 h3 {
     font-weight: 600;
     font-size: 1.6rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     letter-spacing: 0.089rem;
 }
 /*Featured Name*/
@@ -54,32 +51,42 @@ h6 {
     letter-spacing: 1.02px;
 }
 /*Link*/
-h7 {
+h7 a {
     font-weight: 700;
     font-size: 2rem;
+    text-decoration: none;
+    border-bottom: 3px solid #2D2D2D;
 }
 p {
     font-weight: 600;
     font-size: 1.6rem;
     letter-spacing: 0px;
+    line-height: 1.4;
 }
-a {
-    text-decoration: underline;
+a, a:visited {
+    text-decoration: none;
     color: inherit;
 }
-a:visited {
-    text-decoration: underline;
+.mobile {
+    display: inline;
+}
+.desktop {
+    display: none;
 }
 .row {
     margin: 0;
 }
 
 header {
-    padding-top: 7rem;
+    padding-top: 10rem;
 }
-
 .section {
     margin-top: 10rem;
+}
+#projects {
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 #projects > h2 {
     margin-bottom: 1.5rem;
@@ -116,10 +123,10 @@ header {
 #award h6 {
     padding-top: 0.1rem;
 }
-#talky-demo {
+#talky-demo-small {
     max-height: 325px;
     margin-top: 2.3rem;
-    margin-bottom: -0.2rem;
+    margin-bottom: -0.4rem;
 }
 #gelato {
     border-radius: 5px;
@@ -127,26 +134,16 @@ header {
 }
 #gelato img {
     width: 100%;
-    z-index: -1;;
+    z-index: -1;
+    display: block;
 }
 #mbc {
-    background: #DFF7FF;
     border: 2px solid rgba(186,238,255,0.46);
     border-radius: 5px;
-    position: relative;
-    height: 241px;
 }
 #mbc img {
-    max-height: 100%;  
-    max-width: 100%; 
-    width: 65%;
-    height: auto;
-    position: absolute;  
-    top: 0;  
-    bottom: 0;  
-    left: 0;  
-    right: 0;  
-    margin: auto;
+    width: 100%;
+    display: block;
 }
 
 #info > h2 {
@@ -156,7 +153,13 @@ header {
     width: 90%;
     margin: 0 auto;
 }
-#info p {
+#info-wrapper a {
+    border-bottom: 1.8px solid #2D2D2D;
+}
+#info-wrapper .ghost-link {
+    border: initial;
+}
+#info-wrapper > p {
     margin-bottom: 4rem;
 }
 
@@ -166,8 +169,7 @@ footer {
     padding-bottom: 6rem;
 }
 #contact-links {
-    width: 60%;
-    max-width: 600px;
+    display: inline-block;
     margin: 0 auto 2.9rem auto;
 }
 #contact-links div {
@@ -176,4 +178,140 @@ footer {
 footer p {
     font-weight: 700;
     font-size: 1.5rem;
+}
+
+@media (min-width: 495px) {
+    #contact-links .col-12 {
+        width: auto;
+        padding: 0 1.8rem;
+    }
+    #contact-links .col-12:first-child {
+        padding-left: 0;
+    }
+    #contact-links .col-12:last-child {
+        padding-right: 0;
+    }
+    #projects > .row > .col-s-6:last-child {
+        padding-left: 0.5rem;
+    }
+    #projects > .row > .col-s-6:first-child {
+        padding-right: 0.5rem;
+    }
+}
+
+@media (min-width: 625px) {
+    #info-wrapper {
+        width: 80%;
+        max-width: 45rem;
+    }
+}
+
+@media (min-width: 700px) {
+    #info-wrapper {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    /*Title*/
+    h1 {
+        font-size: 5.7rem;
+    }
+    /*Section Header*/
+    h2 {
+        font-weight: 700;
+        font-size: 3.5rem;
+    }
+    /*Featured Name*/
+    h4 {
+        font-size: 5rem;
+    }
+    /*Featured Subtitle*/
+    h5 {
+        font-size: 2.5rem;
+        letter-spacing: 0.2px;
+    }
+    /*Award Title*/
+    h6 {
+        font-size: 1.6rem;
+    }
+    /*Link*/
+    h7 a {
+        font-size: 3rem;
+        border-bottom: 5px solid #2D2D2D;
+    }
+    p {
+        font-size: 2.8rem;
+    }
+    body {
+        padding: 0 2.1rem;
+    }
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+
+    header {
+        padding-top: 20rem;
+    }
+    .section {
+        margin-top: 13.4rem;
+    }
+    #projects {
+        max-width: 1090px;        
+    }
+    #project-description {
+        float: left;
+        width: 50%;
+        padding-left: 7rem;
+    }
+    #talky h4 {
+        margin-top: 7.1rem;
+    }
+    #talky h5 {
+        margin-top: 0.7rem;
+    }
+    #projects .row > div {
+        margin-top: 2.5rem;
+    }
+    #projects > .row > .col-s-6:last-child {
+        padding-left: 1.25rem;
+    }
+    #projects > .row > .col-s-6:first-child {
+        padding-right: 1.25rem;
+    }
+    #award {
+        margin-top: 26.7rem;
+    }
+    #award img {
+        margin-right: 2rem;
+    }
+    #talky::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    #talky-demo-wrapper {
+        width: 50%;
+        float: left;
+    }
+    #talky-demo-large {
+        margin: 0 auto;
+    }
+    #info > h2 {
+        margin-bottom: 5.2rem;
+    }
+    #info-wrapper {
+        max-width: 100%;
+        width: 703px;
+    }
+    #info-wrapper a {
+        border-bottom: 3.5px solid #2D2D2D;
+    }
+    footer {
+        margin-top: 32.5rem;
+        padding-bottom: 7rem;
+    }
 }
