@@ -91,7 +91,7 @@ header {
 #projects > h2 {
     margin-bottom: 1.5rem;
 }
-#projects .row > div {
+#projects .row > a > div {
     margin-top: 1rem;
 }
 #talky {
@@ -273,7 +273,7 @@ footer p {
     #talky h5 {
         margin-top: 0.7rem;
     }
-    #projects .row > div {
+    #projects .row > a > div {
         margin-top: 2.5rem;
     }
     #projects > .row > a:last-child > .col-s-6 {
