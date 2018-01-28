@@ -6,32 +6,10 @@
         <meta name="description" content="Milton Leung Portfolio">
         <meta name="keywords" content="Milton, Leung, Portfolio, Developer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600,300' rel='stylesheet' type='text/css'>
 
-        <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon-180x180.png">
-        <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="/assets/icons/android-chrome-192x192.png" sizes="192x192">
-        <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
-        <link rel="manifest" href="/assets/icons/manifest.json">
-        <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="/assets/icons/favicon.ico">
-        <meta name="msapplication-TileColor" content="#00aba9">
-        <meta name="msapplication-TileImage" content="/assets/icons/mstile-144x144.png">
-        <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="grid.css">
 
-        <link rel="stylesheet" type="text/css" href="style_old.css">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        <script src="scroll.js" type="text/javascript"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -40,128 +18,76 @@
 
             ga('create', 'UA-84476711-1', 'auto');
             ga('send', 'pageview');
-
         </script>
     </head>
     <body>
-        <ul id="contact">
-            <li><a href="mailto:milton.leung96@gmail.com" ><img class="thumbnail" src="assets/Email.png"></a></li>
-            <li><a target="_blank" href="https://www.instagram.com/miltonleung_/?hl=en">
-                <li><img class="thumbnail" src="assets/Insta.png"></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/leungmilton"><img class="thumbnail" src="assets/Linkedin.png"></a></li>
-        </ul>
-        <div id="intro">
-            <h1 id="greeting">Hi, I'm Milton</h1>
-            <p>I am studying Business and Computer Science at the University of British Columbia. As an iOS developer, I have worked on several projects in the past including <b><a target="_blank" href="http://www.mealbutler.club">Meal Butler Club</a></b>, <b><a href="#guessAgain" class="effect-1">Guess Again!</a></b>, and
-                <b><a href="#smallSteps" class="effect-1">Small Steps</a></b>. I loved my internships at <b><a target="_blank" href="https://www.axiomzen.co">Axiom Zen</a></b> and <b><a target="_blank" href="https://www.netgear.com">Netgear</a></b>. Currently, I am an iOS Tech Lead at 
-                <b><a target="_blank" href="http://www.ubclaunchpad.com/">UBC Launchpad</a></b>.
-            </p>
-        </div>
-        <div id="description">
-            <div id="firstDescription">
-                <h2>I enjoy</h2>
-                <div class="enjoy">
-                    <img class="thumbnail" src="assets/TV.png">
-                    <h3>Watching <a target="_blank" href="http://www.hbo.com/silicon-valley">Silicon Valley</a></h3>
-                </div>
-                <div class="enjoy">
-                    <img class="thumbnail hvr-buzz" src="assets/Speaker.png">
-                    <h3>Jamming to <a target="_blank" href="http://chanceraps.com/coloring-book/">Coloring Book</a></h3>
-                </div>
-                <div class="enjoy">
-                    <img class="thumbnail" src="assets/Book.png">
-                    <h3>Reading Outliers</h3><br />
-                </div>
-                <div class="enjoy">
-                    <img id="lastthumbnail" src="assets/Film.png">
-                    <h3>Rewatching The Other Guys</h3>
+        <header>
+            <h1>Hi, I'm Milton</h1>
+            <h3>iOS DEVELOPER</h3>    
+        </header>
+        <div class="section" id="projects">
+            <h2>I love to create</h2>
+            <div class="row">
+                <div class="col-12">
+                    <a href="/talky">
+                        <div id="talky">
+                            <div id="project-description">
+                                <h4>Talky</h4>
+                                <h5>Be a better public speaker now</h5>
+                                <div id="award">
+                                    <img src="assets/medal.svg">
+                                    <h6>NWHACKS 2018 WINNER</h6>
+                                </div>
+                            </div>
+                            <img id="talky-demo-small" class="mobile" src="assets/talky-small.svg">
+                            <div id="talky-demo-wrapper">
+                                <img id="talky-demo-large" class="desktop" src="assets/talky-large.svg"> 
+                            </div>
+                        </div> 
+                    </a>   
                 </div>
             </div>
-            <div id="secondDescription">
-                <h2>I am influenced by</h2>
-                <h3>Tim Ferriss</h3>
-                <h3>Kendrick Lamar</h3>
-            </div>
-        </div>
-        <div id="projects">
-            <h2>I made this</h2>
-
-            <div id="guessAgain" class="title">
-                <img src="assets/Guess.svg">
-                <h4>Guess Again!</h4>
-                <h5>an iOS game that takes guessing games like Pictionary and Charades to the next level<br/>
-                    developed and designed in September 2016</h5>
-            </div>
-            <a target="_blank" href="https://github.com/miltonleung/GuessAgain" class="button">VIEW ON GITHUB</a>
-            <a target="_blank" href="https://itunes.apple.com/us/app/guess-again!/id1153468701?ls=1&mt=8" class="button" id="button-right">DOWNLOAD APP</a>
-            <p>Guessing games are the key to a great dinner party and Guess Again is here to impress your guests and have lots of fun! With preloaded lists of over 1200 entries to draw from, and the ability to create your own public or private lists, the entertainment is endless. Some lists include Billboard Top 100 Artists, Vulture's Most Valuable Stars of 2015, Hollywood Reporters's Best TV Shows Ever, All Time Top 660 Grossing Movies.
-            </p>
-            <div id="demo">
-                <img class="splash"src="assets/GuessAgain.png">
-                <video width="259" height="460" autoplay controls id="demovideo">
-                    <source src="assets/GuessAgainDemo.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video
-                </video>
-            </div>
-
-            <div id="rocketPoll" class="title">
-                <img src="assets/RocketPollIcon.png">
-                <h4>Rocket Poll</h4>
-                <h5>an iOS app where users can ask questions and express opinions by asking and voting<br/>
-                    developed and designed with UBC Launchpad in September 2016</h5>
-            </div>
-            <a target="_blank" href="https://github.com/ubclaunchpad/pollingapp" class="button">VIEW ON GITHUB</a>
-            <a target="_blank" href="https://itunes.apple.com/ca/app/rocket-poll-by-ubclaunchpad/id1143844929?mt=8" class="button" id="button-right">DOWNLOAD APP</a>
-            <p>From asking friends to collecting answers from a lecture of 300 students, Rocket Poll makes this process fast and easy. With a simple interface, you can start asking in 10 seconds or less. Ask week long questions with page long answers, and even see who said no to your party this weekend!</p>
-            <div id="demo">
-                <img class="splash"src="assets/RocketPoll.png">
-                <video width="259" height="460" autoplay controls id="demovideo">
-                    <source src="assets/RocketPollDemo.m4v" type="video/mp4">
-                    Your browser does not support HTML5 video
-                </video>
-            </div>
-
-            <div id="smallSteps" class="title">
-                <img src="assets/SmallStepsIcon.svg">
-                <h4>Small Steps and Little Victories</h4>
-                <h5>an iOS app that quantifies exercise data into fun and interesting milestones <br/>
-                    developed and designed in June 2016</h5>
-            </div>
-            <a target="_blank" href="https://github.com/miltonleung/SmallSteps" class="button">VIEW ON GITHUB</a>
-            <a target="_blank" href="https://itunes.apple.com/us/app/small-steps-little-victories/id1123849631?mt=8" class="button" id="button-right">DOWNLOAD APP</a>
-            <p>Troubled by the enormous amounts of health data thrown at us by most fitness trackers, I set out to solve this problem with my first solo attempt at an iOS application. I created milestones to quantify the kilometers and steps we have been chasing after as well as a smart progress tracker to change our goals according to our performance.</p>
-            <div id="demo">
-                <img class="splash"src="assets/SmallSteps.png">
-                <video width="259" height="460" autoplay controls id="demovideo">
-                    <source src="assets/SmallStepsDemo.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video
-                </video>
-            </div>
-
-            <div class="title">
-                <img src="assets/BprimeIcon.svg">
-                <h4>B Prime Medical</h4>
-                <h5>a website where potential cusomers can contact and seek more information about B Prime Medical, a biomedical practice <br/>
-                    developed and designed in April 2016</h5>
-            </div>
-            <a target="_blank" href="https://github.com/miltonleung/bprimemedical" class="button">VIEW ON GITHUB</a>
-            <a target="_blank" href="http://miltonleung.com/bprimemedical" class="button" id="button-right">VIEW WEBSITE</a>
-            <p>When rebuilding the website for B Prime Medical, ease of use and reducing the amount of time to find information was the highest priority. I decided to consolidate the five existing pages into a simple, yet clear presentation of the practice. Through this project, I learned more about utilizing Bootstrap for quick deployment and making custom UI elements with Sketch. </p>
-            <div id="bprimedemo">
-                <img class="splash"src="assets/Window.svg">
-                <div id="scrollpage">
-                    <img id="demoweb" src="assets/bprime.png">
-                </div>
+            <div class="row">
+                <a href="/gelato">
+                    <div class="col-12 col-s-6">
+                        <div id="gelato">
+                            <img src="assets/gelato.jpg">
+                        </div>
+                    </div>
+                </a>
+                <a href="/mbc">
+                    <div class="col-12 col-s-6">
+                        <div id="mbc">
+                            <img src="assets/mbcLogo.jpg">
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
-        <hr width="50%">
-        <div id="footer">
-            <div id="links">
-                <a href="mailto:milton.leung96@gmail.com" ><img class="thumbnail" src="assets/Email.png"></a>
-                <a target="_blank" href="https://www.instagram.com/miltonleung_/?hl=en"><img class="thumbnail" src="assets/Insta.png"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/leungmilton"><img class="thumbnail" src="assets/Linkedin.png"></a>
+        <div class="section" id="info">
+            <h2>I love to learn</h2>
+            <div id="info-wrapper">
+                <p>I first learned to develop in Swift at <a href="http://www.ubclaunchpad.com/">UBC Launch Pad</a>. Now I’m helping others do the same as an iOS Tech Lead.</p>
+
+                <p>I had a blast interning at <a href="https://www.axiomzen.co/">Axiom Zen</a> and <a href="https://www.netgear.com/">Netgear</a>. I met fantastic people and worked on <a class="ghost-link" href="">Gelato</a>, <a class="ghost-link" href="https://itunes.apple.com/ca/app/legends-fencing/id1277133307?mt=8">Legends</a>, and <a class="ghost-link" href="https://itunes.apple.com/ca/app/netgear-mobile/id457698895?mt=8">Netgear Mobile</a>.</p>
             </div>
-            <p>&copy; Milton Leung 2016</p>
         </div>
+        <footer>
+            <div class="row" id="contact-links">
+                <div class="col-12">
+                    <h7><a href="mailto:milton.leung96@gmail.com">EMAIL</a></h7>
+                </div>
+                <div class="col-12">
+                    <h7><a href="https://github.com/miltonleung/">GITHUB</a></h7>
+                </div>
+                <div class="col-12">
+                    <h7><a href="https://www.linkedin.com/in/leungmilton">LINKEDIN</a></h7>
+                </div>
+                <div class="col-12">
+                    <h7><a href="https://devpost.com/miltonleung">DEVPOST</a></h7>
+                </div>
+            </div>
+            <p>&copy; Milton Leung 2018</p>
+        </footer>
     </body>
 </html>

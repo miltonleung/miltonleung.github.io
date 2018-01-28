@@ -25,6 +25,20 @@
 #navigation .col-6:last-child {
     padding-left: 2.5rem;
 }
+.phone-demo {
+    display: inline-block;
+    max-width: 370px;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+#gelato-main {
+    display: inline-block;
+    max-width: 800px;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
 
 #award-list .title {
     font-size: 1.5rem;
