@@ -132,7 +132,7 @@ header {
     border-radius: 5px;
     overflow: hidden;
 }
-#gelato img {
+#gelato img, #guessagain img {
     width: 100%;
     z-index: -1;
     display: block;
@@ -140,6 +140,7 @@ header {
 #mbc {
     border: 2px solid rgba(186,238,255,0.46);
     border-radius: 5px;
+    overflow: hidden;
 }
 #mbc img, #rc img {
     width: 100%;
@@ -149,6 +150,15 @@ header {
     border: 1px solid #E8E8E8;
     border-radius: 5px;
     display: none;
+    overflow: hidden;
+}
+#guessagain {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#guessagain img {
+    margin-bottom: -0.1rem;
 }
 #all-projects img {
     margin-top: 1.5rem;
@@ -310,6 +320,7 @@ footer p {
         margin-top: 26.7rem;
     }
     #award img {
+        margin-right: 2rem;
         margin-right: 2rem;
     }
     #talky::after {

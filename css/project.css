@@ -52,9 +52,20 @@
 #award-list .col-12:last-child > p {
     margin-bottom: 0;
 }
+#rc {
+    display: block;
+}
 
 #info-wrapper p {
     margin-bottom: 0;
+}
+#character-text {
+    margin-top: 5rem;
+}
+#guess-again-chars {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 1000px;
 }
 #privacy-link {
     border-bottom: 2px solid #2D2D2D;
@@ -62,6 +73,18 @@
     font-size: 1.2rem;
     display: inline-block;  
     margin-top: 2.8rem;
+}
+
+@media (min-width: 495px) {
+    /*Rocket Cast is last element in row, we use second last here*/
+    #projects > .row > a:nth-child(even) > .col-s-6 {
+        padding-left: 0.5rem;
+        padding-right: 0;
+    }
+    #projects > .row > a:nth-child(odd) > .col-s-6 {
+        padding-right: 0.5em;
+        padding-left: 0;
+    }
 }
 
 @media (min-width: 700px) {
@@ -88,6 +111,23 @@
         padding-left: 7.2rem;
     }
 
+    #projects .row > a > .col-lg-4 {
+        margin-top: 2.2rem;
+    }
+    #projects > .row > a > .col-lg-4 {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75em !important;
+    }
+    #projects > .row > a:nth-child(3) > .col-lg-4 {
+        padding-left: 1.5rem !important;
+        padding-right: 0rem !important;
+    }
+    #projects > .row > a:first-child > .col-lg-4,
+    #projects > .row > a:nth-child(4) > .col-lg-4 {
+        padding-left: 0rem !important;
+        padding-right: 1.5em !important;
+    }
+
     #award-list .title {
         font-size: 2.2rem;
         margin-bottom: 2.8rem;
@@ -104,6 +144,12 @@
     #info-wrapper {
         max-width: 100%;
         width: 760px;
+    }
+    #character-text {
+        margin-top: 10rem;
+    }
+    #guess-again-chars {
+        margin-top: 5rem;
     }
     #privacy-link {
         font-size: 1.5rem;   
