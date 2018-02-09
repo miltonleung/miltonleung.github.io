@@ -141,9 +141,18 @@ header {
     border: 2px solid rgba(186,238,255,0.46);
     border-radius: 5px;
 }
-#mbc img {
+#mbc img, #rc img {
     width: 100%;
     display: block;
+}
+#rc {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    display: none;
+}
+#all-projects img {
+    margin-top: 1.5rem;
+    height: 28px;
 }
 
 #info > h2 {
@@ -191,11 +200,12 @@ footer p {
     #contact-links .col-12:last-child {
         padding-right: 0;
     }
-    #projects > .row > a:last-child > .col-s-6 {
+    /*Rocket Cast is last element in row, we use second last here*/
+    #projects > .row > a:nth-last-child(2) > .col-s-6 {
         padding-left: 0.5rem;
     }
     #projects > .row > a:first-child > .col-s-6 {
-        padding-right: 0.5rem;
+        padding-right: 0.5em;
     }
 }
 
@@ -274,13 +284,27 @@ footer p {
         margin-top: 0.7rem;
     }
     #projects .row > a > div {
-        margin-top: 2.5rem;
+        margin-top: 2.2rem;
     }
-    #projects > .row > a:last-child > .col-s-6 {
-        padding-left: 1.25rem;
+    #projects > .row > a > .col-lg-4 {
+        padding-left: 0.75rem;
+        padding-right: 0.75em;
     }
-    #projects > .row > a:first-child > .col-s-6 {
-        padding-right: 1.25rem;
+    #projects > .row > a:last-child > .col-lg-4 {
+        padding-left: 1.5rem;
+        padding-right: 0rem;
+    }
+    #projects > .row > a:first-child > .col-lg-4 {
+        padding-left: 0rem;
+        padding-right: 1.5em;
+    }
+    #rc {
+        display: block;
+    }
+    #all-projects img {
+        margin-top: 4.5rem;
+        margin-bottom: 4rem;
+        height: 38px;
     }
     #award {
         margin-top: 26.7rem;
