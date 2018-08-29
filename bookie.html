@@ -3,7 +3,7 @@
     <head>
         <title>Milton Leung</title>
         <meta charset="UTF-8">
-        <meta name="description" content="Projects by Milton Leung, a Canadian software developer.">   
+        <meta name="description" content="Projects by Milton Leung, a Canadian software developer.">
         <meta name="keywords" content="Milton, Leung, Portfolio, Developer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -33,60 +33,40 @@
     <body>
         <a href="/"><img class="action-shortcut" src="assets/home.svg" alt="Home"></a>
         <header>
-            <h1>All Projects</h1> 
+            <h1>Bookie</h1> 
+            <h3>AUGUST&nbsp;&nbsp;2018</h3>   
         </header>
-        <div class="section" id="projects">
+        <div id="navigation">
             <div class="row">
-                <div class="col-12">
-                    <a href="/talky">
-                        <div id="talky">
-                            <div id="project-description">
-                                <h4>Talky</h4>
-                                <h5>Be a better public speaker now</h5>
-                                <div id="award">
-                                    <img src="assets/medal.svg" alt="Medal" >
-                                    <h6>NWHACKS 2018 WINNER</h6>
-                                </div>
-                            </div>
-                            <img id="talky-demo-small" class="mobile" src="assets/talky-small.svg" alt="Talky">
-                            <div id="talky-demo-wrapper">
-                                <img id="talky-demo-large" class="desktop" src="assets/talky-large.svg" alt="Talky"> 
-                            </div>
-                        </div> 
-                    </a>   
+                <div class="col-6">
+                    <h7><a href="https://medium.com/coinmonks/4-718-using-machine-learning-to-bet-on-the-nhl-25d16649cd52">MEDIUM</a></h7>
+                </div>
+                <div class="col-6">
+                    <h7><a href="https://github.com/miltonleung/Bookie">GITHUB</a></h7>
                 </div>
             </div>
-            <div class="row">
-                <a href="/gelato">
-                    <div class="col-12 col-s-6 col-lg-4">
-                        <div id="gelato">
-                            <img src="assets/gelato.jpg" alt="Gelato">
-                        </div>
-                    </div>
-                </a>
-                <a href="/mealbutlerclub">
-                    <div class="col-12 col-s-6 col-lg-4">
-                        <div id="mbc">
-                            <img src="assets/mbcLogo.jpg" alt="Meal Butler Club">
-                        </div>
-                    </div>
-                </a>
-                <a href="/guessagain">
-                    <div class="col-12 col-s-6 col-lg-4">
-                        <div id="guessagain">
-                            <img src="assets/guess-again.jpg" alt="Guess Again">
-                        </div>
-                    </div>
-                </a>
-            </div>
-           <div class="row">
-                <a href="/rocketcast">
-                    <div class="col-12 col-s-6 col-lg-4">
-                        <div id="rc">
-                            <img src="assets/rocketcast.jpg" alt="RocketCast">
-                        </div>
-                    </div>
-                </a>
+        </div>
+        <div class="section">
+            <img id="bookie-main" alt="Bookie" src="assets/bookie-main.jpg">
+        </div>
+        <div class="section" id="info">
+            <div id="info-wrapper">
+                <p>Can machine learning be used to bet on NHL games?
+                    <br /><br />
+                    I explore this question in depth in my <a href="">Medium article</a>.
+                    <br />
+                    The results?
+                    <br /><br />
+                    Model Accuracy:
+                    <br />
+                    <span id="stat">67.22%</span>
+                    <br /><br />
+                    How much I could have made betting <br />on 2017-2018 season:
+                    <br />
+                    <span id="stat">$4,718</span>
+                    <br /><br />
+                    Using over ten seasons of data from 2007-2018 season and a myriad of advanced hockey statistics, I created a machine learning model that can predict 0.03% short of Vegas'. I used Python to do web scraping, pandas for data processing, and scikit-learn for machine learning.
+                </p>
             </div>
         </div>
         <footer>

@@ -132,7 +132,7 @@ header {
     border-radius: 5px;
     overflow: hidden;
 }
-#gelato img, #guessagain img {
+#gelato img, #guessagain img, #bookie img {
     width: 100%;
     z-index: -1;
     display: block;
@@ -141,15 +141,18 @@ header {
     border: 2px solid rgba(186,238,255,0.46);
     border-radius: 5px;
     overflow: hidden;
+    /*    display: none;*/
 }
-#mbc img, #rc img {
+#projects > .row > a:last-child {
+    display: none;
+}
+#mbc img {
     width: 100%;
     display: block;
 }
-#rc {
-    border: 1px solid #E8E8E8;
+#bookie {
+    border: 1px solid rgb(195, 0, 88, 0.1);
     border-radius: 5px;
-    display: none;
     overflow: hidden;
 }
 #guessagain {
@@ -308,7 +311,7 @@ footer p {
         padding-left: 0rem;
         padding-right: 1.5em;
     }
-    #rc {
+    #projects > .row > a:last-child {
         display: block;
     }
     #all-projects img {

@@ -32,7 +32,7 @@
     height: auto;
     margin: 0 auto;
 }
-#gelato-main {
+#gelato-main, #bookie-main {
     display: inline-block;
     max-width: 800px;
     width: 70%;
@@ -66,6 +66,9 @@
     margin-top: 2rem;
     width: 100%;
     max-width: 1000px;
+}
+#stat {
+    font-size: 5rem; 
 }
 #privacy-link {
     border-bottom: 2px solid #2D2D2D;
