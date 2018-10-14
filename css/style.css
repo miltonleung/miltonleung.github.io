@@ -132,7 +132,7 @@ header {
     border-radius: 5px;
     overflow: hidden;
 }
-#gelato img, #guessagain img, #bookie img {
+#gelato img, #guessagain img, #bookie img, #rc img {
     width: 100%;
     z-index: -1;
     display: block;
